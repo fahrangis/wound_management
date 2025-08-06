@@ -1,0 +1,5 @@
+train: ./data_buff/train
+val: ./data_buff/val
+
+names:
+  0: wound

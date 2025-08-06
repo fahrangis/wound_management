@@ -1,0 +1,6 @@
+train: ./data_with_ref/train
+val: ./data_with_ref/val
+
+names:
+  0: reference
+  1: wound

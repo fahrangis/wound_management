@@ -1,0 +1,8 @@
+train: /content/gdrive/MyDrive/wound_management//data_buff/train/images
+val: /content/gdrive/MyDrive/wound_management//data_buff/val/images
+
+train_masks: /content/gdrive/MyDrive/wound_management//data_buff/train/masks
+val_masks: /content/gdrive/MyDrive/wound_management//data_buff/val/masks
+
+nc: 1
+names: ['wound']
