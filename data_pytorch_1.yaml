@@ -6,5 +6,5 @@ val_masks: /content/gdrive/MyDrive/wound_management/data_with_ref/val/masks
 
 nc: 2
 names:
-  0: reference
-  1: wound
+  1: reference
+  0: wound
