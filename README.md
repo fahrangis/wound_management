@@ -4,7 +4,7 @@ This project is the continuation of https://github.com/void-1409/wound_segmentat
 
 Overview
 
-This project contains YOLOv11-seg and deeplabv3_resnet50 segmentation model which is designed to segment wounds and a reference image from input images. The reference image have a known surface area which is then used to calculate the actual area of segmented wound from the image.
+This project contains YOLOv11-seg and deeplabv3_resnet segmentation model which is designed to segment wounds and a reference image from input images. The reference image have a known surface area which is then used to calculate the actual area of segmented wound from the image.
 
 
 
@@ -48,15 +48,17 @@ Run the healing time prediction
 
 Dataset
 
-The dataset used for training this model consists of labeled images and masks, with two classes.
+    The dataset used for training this model consists of labeled images and masks, with two classes.
 
     Wound Class: labelled as wound, green in masks.
 
     Reference Class: labelled as reference, blue in masks.
 
+    the mask are multi-class 
+
 Retraining the Model
 
-    In order to retrain the model, you can use pre-trained weights from wound_management_yolov11n-seg.pt, wound_management_yolov11x-seg.pt or wound_management_deeplabv3.pth
+    In order to retrain the model, you can use pre-trained weights
 
     The first training (wound_model), was done only on wound class and there was no reference class. With 3017 train, 752 val et 433 test images.
     The second training (wound_management), was done on top of the first training with both wound and reference classes in training set. with 1000 train, 200 val et 100 test images.
