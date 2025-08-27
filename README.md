@@ -50,18 +50,18 @@ Dataset
 
     The dataset used for training this model consists of labeled images and masks, with two classes.
 
-    Wound Class: labelled as wound, green in masks.
+    Wound Class: labelled as wound, green in masks, 0 in labels.
 
-    Reference Class: labelled as reference, blue in masks.
+    Reference Class: labelled as reference, blue in masks, 1 in labels.
 
-    the mask are multi-class 
+
 
 Retraining the Model
 
     In order to retrain the model, you can use pre-trained weights
 
-    The first training (wound_model), was done only on wound class and there was no reference class. With 3017 train, 752 val et 433 test images.
-    The second training (wound_management), was done on top of the first training with both wound and reference classes in training set. with 1000 train, 200 val et 100 test images.
+    The first training was done only on wound class and there was no reference class. With 3017 train, 752 val et 433 test images.
+    The second training was done on top of the first training with both wound and reference classes in training set. with 1000 train, 200 val et 100 test images.
 
 
 
@@ -72,3 +72,37 @@ result from training
 example of healing image
 
 
+
+exeplication of the file :
+    data is only about wound (basic training for yolo) 
+    data_buff is only about wound
+    data_with_ref is for the wound + reference 
+
+    output is for the inference of the models
+    healing is contain the image processing result
+
+    data.yaml is for basic wound training of yolo
+    data1.yaml is for wound training of yolo
+    data2.yaml is for wound + reference training of yolo
+
+    data_pytorch is for wound training of resnet
+    data_pytorch_1 is for wound + reference training of resnet
+
+    wound_management.ipynb is the code for the project
+
+    basic model (yolo)
+        basic_wound_model_yolov11n-seg.pt
+        basic_wound_management_yolov11n-seg.pt
+        basic_wound_model_yolov11x-seg.pt
+        basic_wound_management_yolov11x-seg.pt
+
+    model (yolo)
+        wound_model_yolov11n-seg.pt
+        wound_management_yolov11n-seg.pt
+        wound_model_yolov11x-seg.pt
+        wound_management_yolov11x-seg.pt
+
+    model (resnet)
+        wound_management_deeplabv3.pth
+        wound_size_deeplabv3.pth
+        wound_size_bis_deeplabv3.pth
