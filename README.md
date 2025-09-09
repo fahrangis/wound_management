@@ -68,7 +68,7 @@ example of output image (resnet)
 
 ![example 4](output/output_resnet_50/predict_both_bis/0911.png)
 ![example 5](output/output_resnet_50/predict_both_bis/medetec_0153.png)
-![example 6](output/output_resnet_50/predict_both_bis/MATECIMAG56.png)
+![example 6](output/output_resnet_50/predict_both_bis/SIMATECIMAG56.png)
 
 
 
