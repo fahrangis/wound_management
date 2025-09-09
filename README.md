@@ -58,11 +58,31 @@ Retraining the Model
 
 
 
-example of output image
+example of output image (yolo)
 
-result from training
+![example 1](output\output_x-seg\predict_both_buff\0911.png)
+![example 2](output\output_x-seg\predict_both_buff\medetec_0153.png)
+![example 3](output\output_x-seg\predict_both_buff\SIMATECIMAG56.png)
 
-example of healing image
+example of output image (resnet)
+
+![example 4](output\output_resnet_50\predict_both_bis\0911.png)
+![example 5](output\output_resnet_50\predict_both_bis\medetec_0153.png)
+![example 6](output\output_resnet_50\predict_both_bis\SIMATECIMAG56.png)
+
+
+
+example of healing image (yolo)
+
+![example 7](healing\healing_x\predict_both_bis\SIMATECIMAG56_annoted.jpg)
+![example 8](healing\healing_x\predict_both_bis\ADANIMG700_annotated.jpg)
+![example 9](healing\healing_x\predict_both_bis\CARLOS_ARTUROIMG576_annotated.jpg)
+
+example of healing image (resnet)
+
+![example 10](healing\healing_50\predict_both_bis\CARLOS_ARTUROIMG576_annotated.jpg)
+![example 11](healing\healing_50\predict_both_bis\FABIOIMG1406_annotated.jpg)
+![example 12](healing\healing_50\predict_both_bis\SIMATECIMAG56_annotated.jpg)
 
 
 
