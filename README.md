@@ -86,7 +86,7 @@ example of healing image (resnet)
 
 
 
-exeplication of the file :
+explication of the folders :
 
     data is only about wound (basic training for yolo) 
     data_buff is only about wound
