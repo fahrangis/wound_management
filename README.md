@@ -74,7 +74,7 @@ example of output image (resnet)
 
 example of healing image (yolo)
 
-![example 7](healing/healing_x/SIMATECIMAG56_annoted.png)
+![example 7](healing/healing_x/SIMATECIMAG56.jpg)
 ![example 8](healing/healing_x/ADANIMG700_annotated.jpg)
 ![example 9](healing/healing_x/CARLOS_ARTUROIMG576_annotated.jpg)
 
@@ -82,7 +82,7 @@ example of healing image (resnet)
 
 ![example 10](healing/healing_50/CARLOS_ARTUROIMG576_annotated.jpg)
 ![example 11](healing/healing_50/FABIOIMG1406_annotated.jpg)
-![example 12](healing/healing_50/IMATECIMAG56_annotated.png)
+![example 12](healing/healing_50/IMATECIMAG56.jpg)
 
 
 
