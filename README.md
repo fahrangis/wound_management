@@ -23,13 +23,6 @@ Features
     Detection of infection and necrosis: Using dilatation of the wound area and precise spectrum of color we can get a probability of presence of necrosis and infection.
 
 
-    
-Run the segmentation
-
-    yolo segment predict model=wound_management_yolov11n-seg.pt source="data_with_ref/test" conf=0.75
-
-    Note: change the path of source in above line to your image-dataset to test. Change the Yolo model for your're need, n is faster, x is better. 
-        This is only for segmentation using the trained model.
 
 Run the live segmentation using your webcam
 
@@ -42,7 +35,7 @@ Run the healing time prediction
 
     Look at the parameters tables (you can extend it if needed), verify input_folder, path_model and output_folder are corect for what you want. Run the code.
 
-    The result will be in 
+    The result will be in the folder healing, for the most efficient result use wound_size_bis_deeplabv3.pth or wound_management_yolov11x-seg.pt
 
 
 
@@ -91,18 +84,18 @@ exeplication of the file :
     wound_management.ipynb is the code for the project
 
     basic model (yolo)
-        basic_wound_model_yolov11n-seg.pt
-        basic_wound_management_yolov11n-seg.pt
-        basic_wound_model_yolov11x-seg.pt
-        basic_wound_management_yolov11x-seg.pt
+        basic_wound_model_yolov11n-seg.pt           (wound)
+        basic_wound_management_yolov11n-seg.pt      (wound + reference)
+        basic_wound_model_yolov11x-seg.pt           (wound)
+        basic_wound_management_yolov11x-seg.pt      (wound + reference)
 
     model (yolo)
-        wound_model_yolov11n-seg.pt
-        wound_management_yolov11n-seg.pt
-        wound_model_yolov11x-seg.pt
-        wound_management_yolov11x-seg.pt
+        wound_model_yolov11n-seg.pt                 (wound)
+        wound_management_yolov11n-seg.pt            (wound + reference)
+        wound_model_yolov11x-seg.pt                 (wound)
+        wound_management_yolov11x-seg.pt            (wound + reference)
 
     model (resnet)
-        wound_management_deeplabv3.pth
-        wound_size_deeplabv3.pth
-        wound_size_bis_deeplabv3.pth
+        wound_management_deeplabv3.pth              (wound)
+        wound_size_deeplabv3.pth                    (wound + reference)
+        wound_size_bis_deeplabv3.pth                (wound + reference + other)

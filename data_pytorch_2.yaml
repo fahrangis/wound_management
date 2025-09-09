@@ -1,0 +1,11 @@
+train: /content/gdrive/MyDrive/wound_management/data_with_ref/train/images
+val: /content/gdrive/MyDrive/wound_management/data_with_ref/val/images
+
+train_masks: /content/gdrive/MyDrive/wound_management/data_with_ref/train/masks
+val_masks: /content/gdrive/MyDrive/wound_management/data_with_ref/val/masks
+
+nc: 3
+names:
+  2: other
+  1: reference
+  0: wound
